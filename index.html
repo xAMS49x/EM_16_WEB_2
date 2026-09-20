@@ -4,35 +4,74 @@
     <meta charset="UTF-8" />
     <title>Навчальний сайт</title>
     <link rel="stylesheet" href="styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tektur:wght@400..900&family=Tomorrow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
 <header class="header">
     <nav>
         <ul class="nav-list">
-            <li><a href="#">Головна</a></li>
+            <li><a href="index.html">Головна</a></li>
             <li><a href="#">Про нас</a></li>
             <li><a href="#">Послуги</a></li>
-            <li><a href="#">Контакти</a></li>
+            <li><a href="./pages/contacts.html">Контакти</a></li>
         </ul>
     </nav>
 </header>
 
 
 <main class="content">
-    <h1 id="header-id">Демонстрація CSS</h1>
-
-    <div class="box box1">Box 1</div>
-    <div class="box box2">Box 2</div>
-    <div class="box box3">Box 3</div>
-    <div class="box box4">Box 4</div>
-    <div class="box box5">Box 5</div>
+    <h1 id="header-id">CSS DEMO</h1>
+    
+    <div hidden="until-found" class="box-wrapper">
+        <div class="box box1">Box 1</div>
+        <div class="box box2">Box 2</div>
+        <div class="box box3">Box 3</div>
+        <div class="box box4">Box 4</div>
+        <div class="box box5">Box 5</div>
+    </div>
+    
+    <div class="card-container">
+        <div class="card" id="card-pulsars">
+            <div class="card-image-block">
+                <img src="https://universemap.net/wp-content/uploads/2025/05/pulsar-rotating-neutron-star-beams-illustration.jpg" alt="Graphic pulsar depiction" class="card-image"/>
+            </div>
+            <div class="card-text-block">
+                <h2>Pulsars</h2>
+                <p>Pulsars are the lighthouses of the universe. They’re neutron stars ― the very dense remnants of a dead star ― that are highly magnetic and rotate rapidly as they emit beams of radiation, generally from the vicinity of their magnetic poles.</p>
+                <button onclick="location.href = 'https://science.nasa.gov/mission/hubble/science/science-behind-the-discoveries/hubble-pulsars/'" type="submit">Learn more</button>
+            </div>
+        </div>
+        <div class="card" id="card-black-holes">
+            <div class="card-image-block">
+                <img src="https://assets.iflscience.com/assets/articleNo/82039/aImg/88234/black-hole-meta.jpg" alt="Black hole visualisation" class="card-image"/>
+            </div>
+            <div class="card-text-block">
+                <h2>Black Holes</h2>
+                <p>Black holes are among the most mysterious cosmic objects, much studied but not fully understood. These objects aren’t really holes. They’re huge concentrations of matter packed into very tiny spaces.</p>
+                <button onclick="location.href = 'https://science.nasa.gov/universe/black-holes/'" type="submit">Learn more</button>
+            </div>
+        </div>
+        <div class="card" id="card-supernovae">
+            <div class="card-image-block">
+                <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/Crab_Nebula.jpg/500px-Crab_Nebula.jpg?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail" alt="Supernova photograph" class="card-image"/>
+            </div>
+            <div class="card-text-block">
+                <h2>Supernovae</h2>
+                <p>A supernova (pl.: supernovae) is a powerful and luminous explosion of a star. A supernova occurs during the last evolutionary stages of a massive star, or when a white dwarf is triggered into runaway nuclear fusion.</p>
+                <button onclick="location.href = 'https://en.wikipedia.org/wiki/Supernova'" type="submit">Learn more</button>
+            </div>
+        </div>
+    </div>
+    
     
     <ul class="added-list">
-        <li><a href="https://youtu.be/53ok82N8NRE?list=PLqsMd9GWQDpK9Y8Th4DFAlzkM2_KN0JLm" class="li1">Random Link</a></li>
-        <li><a href="https://youtu.be/VLShjvNyqkc?list=PLqsMd9GWQDpK9Y8Th4DFAlzkM2_KN0JLm" class="li2">Random Link</a></li>
-        <li><a href="https://youtu.be/zvb19smPlSQ?list=PLqsMd9GWQDpK9Y8Th4DFAlzkM2_KN0JLm" class="li1">Random Link</a></li>
-        <li><a href="https://youtu.be/be9ePXWuJ7U?list=PLqsMd9GWQDpK9Y8Th4DFAlzkM2_KN0JLm&t=47" class="li2">Random Link</a></li>
-        <li><a href="https://youtu.be/jE-S-ge5GbE?list=PLqsMd9GWQDpK9Y8Th4DFAlzkM2_KN0JLm" class="li1">Random Link</a></li>
+        <li><a href="https://youtu.be/53ok82N8NRE?list=PLqsMd9GWQDpK9Y8Th4DFAlzkM2_KN0JLm" class="li-green">Random Link</a></li>
+        <li><a href="https://youtu.be/VLShjvNyqkc?list=PLqsMd9GWQDpK9Y8Th4DFAlzkM2_KN0JLm" class="li-red">Random Link</a></li>
+        <li><a href="https://youtu.be/zvb19smPlSQ?list=PLqsMd9GWQDpK9Y8Th4DFAlzkM2_KN0JLm" class="li-green">Random Link</a></li>
+        <li><a href="https://youtu.be/be9ePXWuJ7U?list=PLqsMd9GWQDpK9Y8Th4DFAlzkM2_KN0JLm&t=47" class="li-red">Random Link</a></li>
+        <li><a href="https://youtu.be/jE-S-ge5GbE?list=PLqsMd9GWQDpK9Y8Th4DFAlzkM2_KN0JLm" class="li-green">Random Link</a></li>
     </ul>
 
 </main>

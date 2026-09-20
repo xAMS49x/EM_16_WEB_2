@@ -24,9 +24,7 @@ footer, header, hgroup, menu, nav, section {
     display: block;
 }
 
-body {
-    line-height: 1;
-}
+
 
 ol, ul {
     font-size: 20px;
@@ -64,11 +62,31 @@ table {
     border-spacing: 0;
 }
 
+
+.tektur-maintext {
+    font-family: "Tektur", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+            "wdth" 100;
+}
+
 body {
+    background-image:
+            linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+            url("https://cdn.sci.news/images/enlarge11/image_12758e-Vela-Supernova-Remnant.jpg");
+    line-height: 1;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    font-family: Arial, sans-serif;
+    font-family: "Tektur", sans-serif;
+}
+
+h2 {
+    font-family: "Tomorrow", sans-serif;
+    font-weight: 900;
+    font-style: italic;
 }
 
 .header {
@@ -146,25 +164,135 @@ body {
 .footer {
     background-color: #ff2f24;
     color: white;
-    text-align: center;
     padding: 15px;
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    margin-top: auto;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
 }
 
 #header-id {
     font-size: 40px;
-    color:blue;
+    color: white;
 }
 
-.li1 {
+.li-green {
     color: lawngreen;
 }
 
-.li2 {
+.li-red {
     color: red;
 }
 
 .highlight {
-    
     color: blue;
     font-weight: bold;
+}
+
+div.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+div.card {
+    background-color: black;
+    color: white;
+    width: 200px;
+    height: 400px;
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 4px;
+}
+
+div.card-image-block {
+    height: 50%;
+    width: 100%;
+    overflow: hidden;
+}
+
+div.card-image-block img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-text-block {
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    gap: 8px;
+    height: 50%;
+}
+
+.card-text-block h2 {
+    font-size: 18px;
+    font-weight: 900;
+    font-style: italic;
+    font-family: "Tomorrow", sans-serif;
+}
+
+.card-text-block p {
+    width: 160px;
+    height: 120px;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.card-text-block button {
+    width: 100px;
+    margin: 0 auto;
+    background-color: blue;
+    color: white;
+    font-size: 14px;
+    font-weight: 900;
+    border: none;
+    padding: 6px 0 6px 0;
+    cursor: pointer;
+}
+
+.contacts-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-width: 4px;
+    border-style: solid;
+    border-radius: 4px;
+    border-color: white;
+    width: 400px;
+    height: 400px;
+    margin: 20px auto;
+    gap: 20px;
+    text-align: center;
+}
+
+.contacts-box ul, ol {
+    list-style-type: none;
+    color: white;
+    font-size: 24px;
+}
+
+.contacts-box li {
+    margin: 10px;
+}
+
+.contacts-box a {
+    color: red;
+}
+
+.contacts-box h1 {
+    color: white;
+    font-size: 32px;
 }
